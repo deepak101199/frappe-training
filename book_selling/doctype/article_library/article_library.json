@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "autoname": "field:article",
+ "creation": "2021-09-02 09:54:00.384124",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "article",
+  "article_cost",
+  "total_cost",
+  "column_break_4",
+  "author",
+  "deliver_cost",
+  "track_buyer",
+  "section_break_7",
+  "buyer",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "article",
+   "fieldtype": "Data",
+   "label": "Article",
+   "unique": 1
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author"
+  },
+  {
+   "fieldname": "article_cost",
+   "fieldtype": "Data",
+   "label": "Article cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "deliver_cost",
+   "fieldtype": "Data",
+   "label": "Deliver cost"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Data",
+   "label": "Total cost"
+  },
+  {
+   "default": "0",
+   "fieldname": "track_buyer",
+   "fieldtype": "Check",
+   "label": "Track buyer"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Table",
+   "label": "Buyer",
+   "options": "Buyer"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-10 10:40:26.718086",
+ "modified_by": "Administrator",
+ "module": "Book Selling",
+ "name": "Article Library",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "article",
+ "track_changes": 1
+}

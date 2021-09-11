@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "autoname": "member_id",
+ "creation": "2021-09-02 10:41:15.473194",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member_id",
+  "name1",
+  "email",
+  "column_break_4",
+  "no_month",
+  "from_date",
+  "to_date"
+ ],
+ "fields": [
+  {
+   "depends_on": "member_id",
+   "fetch_from": "member_id.name1",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "depends_on": "member_id",
+   "fetch_from": "member_id.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Data",
+   "label": "From date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Data",
+   "label": "To date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Link",
+   "label": "Member id",
+   "options": "Membership Payment"
+  },
+  {
+   "depends_on": "member_id",
+   "fetch_from": "member_id.no_of_month",
+   "fieldname": "no_month",
+   "fieldtype": "Data",
+   "label": "NO of Month"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-04 10:22:31.982454",
+ "modified_by": "Administrator",
+ "module": "Book Selling",
+ "name": "Library membership",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "name1",
+ "track_changes": 1
+}

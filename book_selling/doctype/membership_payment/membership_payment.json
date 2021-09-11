@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "autoname": "field:member_id",
+ "creation": "2021-09-02 10:25:09.645849",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member_id",
+  "name1",
+  "email",
+  "column_break_4",
+  "mobile",
+  "no_of_month",
+  "total_fee"
+ ],
+ "fields": [
+  {
+   "depends_on": "member_id",
+   "fetch_from": "member_id.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "depends_on": "member_id",
+   "fetch_from": "member_id.mobile",
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "no_of_month",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "NO Of Month",
+   "reqd": 1
+  },
+  {
+   "default": "200",
+   "fieldname": "total_fee",
+   "fieldtype": "Data",
+   "label": "Total Fee"
+  },
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Link",
+   "label": "Member Id",
+   "options": "Library member",
+   "unique": 1
+  },
+  {
+   "depends_on": "member_id",
+   "fetch_from": "member_id.full_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-04 10:20:39.157337",
+ "modified_by": "Administrator",
+ "module": "Book Selling",
+ "name": "Membership Payment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "member_id",
+ "track_changes": 1
+}
